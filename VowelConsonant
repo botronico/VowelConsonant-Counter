@@ -1,0 +1,21 @@
+# Ingresar una frase
+texto = input("Ingrese una frase: ")
+
+# Contadores de vocales y consonantes
+contador_vocales = 0
+contador_consonantes = 0
+
+# Define las vocales
+vocales = "aeiouAEIOU"
+
+# Contador
+for caracter in texto:
+    # Verifica si el carácter es una vocal
+    if caracter in vocales:
+        contador_vocales += 1
+    # Verifica si el carácter es una consonante
+    elif caracter.isalpha():  # Solo cuenta las letras del alfabeto
+        contador_consonantes += 1
+
+print("Número de vocales:", contador_vocales)
+print("Número de consonantes:", contador_consonantes)
